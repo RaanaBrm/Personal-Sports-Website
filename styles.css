@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Hero Section with Background Image */
+#hero {
+  background-image: url('back.jpg'); /* Place your image URL here */
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center center; /* Centers the image */
+  height: 60vh; /* Set the height of the section */
+  color: white; /* Text color */
+  text-align: center; /* Center the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: 3em; /* Font size for the heading */
+}
+
+
+/* ABOUT SECTION */
+#about {
+  padding: 60px;
+  background-color: #f1f1f1; /* Lighter background for a modern look */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Harmonized typography with services */
+}
+
+#about h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+  font-weight: bold;
+  color: #2c3e50; /* Bold heading with a professional tone */
+  letter-spacing: 1px;
+}
+
+/* FLEXBOX LAYOUT FOR ITEMS */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px; /* Space between items */
+  flex-wrap: wrap; /* Wrap items for responsiveness */
+}
+
+/* ABOUT SECTION */
+#about {
+  padding: 60px;
+  background-color: #f9f9f9; /* Light background for a modern look */
+  text-align: center;
+  font-family: 'Roboto', sans-serif; /* Professional typography */
+}
+
+#about h2 {
+  font-size: 2.8em;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #2c3e50;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* ABOUT CONTENT */
+.about-content {
+  margin: 0 auto;
+  padding: 40px;
+  max-width: 800px; /* Limit the width of the content */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: left; /* Align content to the left */
+}
+
+.about-content:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* IMAGE INSIDE ABOUT SECTION */
+.about-content img {
+  float: left; /* Align image to the left */
+  margin-right: 20px;
+  border-radius: 10px;
+  width: 150px;
+  height: auto;
+  border: 3px solid #007BFF;
+}
+
+/* TEXT STYLING */
+.about-content h3 {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+}
+
+.about-content p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .about-content {
+    text-align: center; /* Center align content for small screens */
+  }
+
+  .about-content img {
+    float: none;
+    margin: 0 auto 20px;
+    display: block;
+  }
+}
+
+/* Services Section */
+#services {
+  padding: 50px;
+  background-color: #f1f1f1; /* Lighter background */
+  text-align: center;
+}
+
+.container {
+  display: flex; /* Use Flexbox */
+  justify-content: center; /* Center items horizontally */
+  gap: 20px; /* Add spacing between items */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.service-item {
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+  max-width: 300px; /* Limit width for a compact layout */
+  text-align: center; /* Ensure text alignment */
+}
+
+.service-item:hover {
+  transform: translateY(-12px); /* Lift on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+  background-color: #f7f7f7;
+}
+
+.service-item i {
+  color: #000; /* Icon color */
+  margin-bottom: 15px;
+}
+
+.service-item h3 {
+  font-size: 1.9em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.service-item p {
+  font-size: 1.1em;
+  color: #666;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    gap: 30px;
+  }
+
+  .service-item {
+    max-width: 90%; /* Allow items to take more space */
+  }
+}
+
+
+
+
+
+
+/* CONTACT SECTION */
+#contact {
+  padding: 60px;
+  background-color: #f8f9fa; /* Slightly lighter for a clean look */
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #2c3e50; /* A deeper color for contrast */
+  font-family: 'Roboto', sans-serif; /* Modern font style */
+}
+
+#contact .group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#contact .group .text {
+  font-size: 18px;
+  font-weight: 400;
+  color: #666;
+  max-width: 750px;
+  line-height: 1.8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* FORM STYLING */
+form {
+  max-width: 600px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+form label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+}
+
+form input, 
+form textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px; /* Rounded input fields */
+  border: 1px solid #ddd;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+form input:focus, 
+form textarea:focus {
+  border-color: #007BFF;
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Highlighted focus effect */
+}
+
+form button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+form button:active {
+  transform: translateY(0); /* Return to the default position */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+  }
+
+  #contact h2 {
+    font-size: 28px;
+  }
+
+  #contact .group .text {
+    font-size: 16px;
+  }
+}
+
+
+/* General Styles */
+html, body {
+  height: 100%; /* Ensures full height for the page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+html, body {
+  height: 100%; /* Ensures full height for the page */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;  /* Dark background color */
+  color: white;             /* White text color */
+  height: 40px;             /* Height of the footer (adjust as needed) */
+  text-align: center;       /* Center text horizontally */
+  position: fixed;
+  bottom: 0;
+  width: 100%;              /* Full width */
+  left: 0;
+  display: flex;
+  justify-content: center;  /* Centers content horizontally */
+  align-items: center;      /* Centers content vertically */
+}
+
+/* Add padding to the body content so it's not hidden behind the footer */
+body {
+  padding-bottom: 40px; /* Adjust this value to match t
+
+
+/* Add padding to the body content so it's not hidden behind the footer */
+body {
+  padding-bottom: 60px; /* Adjust based on the footer's height */
+}
+
